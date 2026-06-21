@@ -184,7 +184,7 @@ export const api = {
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve({
-            code: 200,
+            code: 0,
             data: {
               exposed: true,
               md5: 'mock-md5-hash'
@@ -206,11 +206,11 @@ export const api = {
         setTimeout(() => {
           const orderId = 'ORD' + Date.now()
           resolve({
-            code: 200,
+            code: 0,
             data: {
               orderId: orderId
             },
-            message: '秒杀成功'
+            msg: '秒杀成功'
           })
         }, 500)
       })
